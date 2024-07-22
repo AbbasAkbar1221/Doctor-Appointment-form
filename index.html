@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <style>
+        .container {
+          display: flex;
+          justify-content: center;
+          padding: 2% 2%;
+          border: 1px solid;
+          border-radius: 5px;
+          margin: 2% 20%;
+          /* box-shadow: 2px 2px 5px rgb(173, 171, 171) inset; */
+           box-shadow: 5px 5px 4px rgb(173, 171, 171);
+         
+        }
+        legend{
+          border: 1px solid;
+          border-radius: 5px;
+          background-color: rgb(182, 174, 174);
+          font-size: 18px;
+          font-weight: bold;
+          padding: 8px;
+        }
+        #form_field{
+          background-color: rgb(234, 231, 231);
+          
+        }
+        .form{
+          padding: 5% 2%;
+          margin: 0 5%;
+          font-size: 20px;
+        }
+       .form input{
+        padding: 2% 28%;
+       }
+       .form input[type="date"]{
+        padding: 2% 36%;
+       }
+       .form input[type="time"]{
+        padding: 2% 39%;
+       }
+       input[type="submit"]{
+          padding: 2% 31%;
+          margin-left: 7%;
+          margin-bottom:3% ;
+          cursor: pointer;
+       }
+       input[type="reset"]{
+        padding: 2% 40%;
+        margin-left: 7%;
+        cursor: pointer;
+       }
+       h1{
+        color: gray;
+       }
+       .form #dropdown{
+        padding: 3% 25%;
+       }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset id="form_field">
+          <legend>Login:</legend>
+          <h1>Doctor Appointment Booking</h1>
+          <form action="Book an appointment">
+            <div class="form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name">
+            </div>
+              <div class="form">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" />
+              </div>
+
+              <div class="form">
+                <label for="date">Date:</label><br>
+                <input type="Date" id="date" />
+              </div>
+              <div class="form">
+                <label for="time">Time:</label><br>
+                <input type="time" id="time">
+              </div>
+              <div class="form">
+                <label for="select">Select Doctor:</label><br>
+                <select name="dropdown" id="dropdown">
+                    <option value="" selected disabled hidden>--Please choose an option--</option>
+                    <option value="Dr.Will">Dr.Will</option>
+                    <option value="Dr.James">Dr.James</option>
+                    <option value="Dr.Smith">Dr.Smith</option>
+                </select>
+              </div>
+              <div class="form">
+                <label for="textarea">Reason for visit:</label><br>
+                <textarea name="text" id="textarea" rows="6" cols="46"></textarea>
+              </div>
+              <input type="submit" value="Book Appointment">
+              <input type="reset" value="Reset">
+            </form>
+        </fieldset>
+      </div>
+</body>
+</html>
